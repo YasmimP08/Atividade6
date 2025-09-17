@@ -1,0 +1,72 @@
+:global(body.light) { 
+  background: #fff;
+  color: #111;
+}
+
+:global(body.dark) {
+    background: #111;
+    color: #eee;
+}
+
+.maincontent {
+  padding: 14px;
+}
+
+.navbar {
+  position: fixed;
+  z-index: 9999;  
+  top: 0; left: 0; right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgb(5, 64, 141);
+  color: aliceblue;
+  border-bottom: 1px solid #ddd;
+  padding: 0.1rem 0.8rem;
+  font-family: monospace;
+  font-size: x-large;
+}
+
+body.dark .navbar {
+  background: rgb(3, 41, 90);
+  border-bottom: 1px solid #444;
+}
+
+.actions { 
+  display: flex; 
+  gap: 1rem; 
+  align-items: center; 
+}
+
+.themebtn { 
+  background: none; 
+  margin-top: 3.2px;
+  border: none; 
+  cursor: pointer; 
+  color: white;
+}
+.themebtn:hover {
+  transform: translateY(-2px);
+  color: #bdffff;
+}
+
+.themebtn:focus-within {
+  outline: 2px solid #10c9c9;
+  outline-offset: 2px;
+}
+
+.cart { 
+  position: relative;
+  margin-top: 2.5px;
+  color: aliceblue;
+  cursor: pointer; 
+}
+
+.cart:hover {
+  transform: translateY(-2px);
+  color: #bdffff;
+}
+
+.cart:focus-within {
+  outline: 2px solid #10c9c9;
+}
