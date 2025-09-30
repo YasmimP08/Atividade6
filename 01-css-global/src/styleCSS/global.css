@@ -203,17 +203,6 @@ body.dark .product-btn.ghost { color: rgb(6, 144, 179); }
   cursor: not-allowed;
 }
 
-
-
-
-
-
-
-
-
-
-
-/* Skeleton base */
 .skeleton {
   height: 300px;
   background-color: #e0e0e0;
@@ -222,12 +211,10 @@ body.dark .product-btn.ghost { color: rgb(6, 144, 179); }
   overflow: hidden;
 }
 
-/* Dark mode */
 .dark .skeleton {
   background-color: #3a3a3a;
 }
 
-/* Pulse animation */
 .skeleton::after {
   content: '';
   position:absolute;
@@ -245,7 +232,6 @@ body.dark .product-btn.ghost { color: rgb(6, 144, 179); }
   100% { left: 100%; }
 }
 
-/* Skeleton shapes */
 .skeleton.image {
   width: 100%;
   aspect-ratio: 1 / 1;

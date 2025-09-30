@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react"
 import { Sun, Moon, ShoppingCart } from "lucide-react"
-// npm install -D tailwindcss@3 postcss autoprefixer
-// npx tailwindcss init -p
 
 export default function Navbar() {
   const [theme, setTheme] = useState("light")
