@@ -21,10 +21,10 @@ export default function Navbar() {
   }
 
   return (
-    <header className={styles.navbar}>
+    <header className={styles.navBar}>
       <div>LOGO</div>
       <div className={styles.actions}>
-        <button onClick={toggleTheme} className={styles.themebtn}  aria-label={theme === "dark" ? "Ativar tema claro" : "Ativar tema escuro"}>
+        <button onClick={toggleTheme} className={styles.themeBtn}  aria-label={theme === "dark" ? "Ativar tema claro" : "Ativar tema escuro"}>
           {theme === "dark" ? <Sun size={18}/> : <Moon size={18}/>}
         </button>
 

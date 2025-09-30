@@ -8,11 +8,7 @@
     color: #eee;
 }
 
-.maincontent {
-  padding: 14px;
-}
-
-.navbar {
+.navBar {
   position: fixed;
   z-index: 9999;  
   top: 0; left: 0; right: 0;
@@ -27,7 +23,7 @@
   font-size: x-large;
 }
 
-body.dark .navbar {
+:global(body.dark) .navBar {
   background: rgb(3, 41, 90);
   border-bottom: 1px solid #444;
 }
@@ -38,19 +34,19 @@ body.dark .navbar {
   align-items: center; 
 }
 
-.themebtn { 
+.themeBtn { 
   background: none; 
   margin-top: 3.2px;
   border: none; 
   cursor: pointer; 
   color: white;
 }
-.themebtn:hover {
+.themeBtn:hover {
   transform: translateY(-2px);
   color: #bdffff;
 }
 
-.themebtn:focus-within {
+.themeBtn:focus-within {
   outline: 2px solid #10c9c9;
   outline-offset: 2px;
 }

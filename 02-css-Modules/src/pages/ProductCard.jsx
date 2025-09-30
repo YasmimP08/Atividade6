@@ -11,22 +11,22 @@ import produto6IMG from "../assets/produto6.jpg"
 
 export function ProductCard({ product }) {
   return (
-    <div className={productStyles.productcard} tabIndex={0}>
+    <div className={productStyles.productCard} tabIndex={0}>
 
-      <div className={productStyles.productimagewrapper}>
-        {product.tag && ( <span className={`${productStyles.producttag} ${product.tag.toLowerCase() === "novo" ? productStyles.novo : productStyles.promo}`}>{product.tag}</span>)}
+      <div className={productStyles.productImageWrapper}>
+        {product.tag && ( <span className={`${productStyles.productTag} ${product.tag.toLowerCase() === "novo" ? productStyles.novo : productStyles.promo}`}>{product.tag}</span>)}
         <img src={product.image} alt={product.title} loading="lazy" />
       </div>
 
-      <div className={productStyles.producttitle}>{product.title}
+      <div className={productStyles.productTitle}>{product.title}
       </div>
 
-      <div className={productStyles.productinfo}>
+      <div className={productStyles.productInfo}>
         <span>R$ {product.price.toFixed(2)}</span>
         <span>{"★".repeat(product.rating)}{"☆".repeat(5 - product.rating)}</span>
       </div>
 
-      <button className={`${productStyles.productbtn} ${productStyles.solid}`} role="button" disabled={product.outOfStock} aria-label={`Adicionar ${product.title} ao carrinho`}>
+      <button className={`${productStyles.productBtn} ${productStyles.solid}`} role="button" disabled={product.outOfStock} aria-label={`Adicionar ${product.title} ao carrinho`}>
         Adicionar
       </button>
 
@@ -95,7 +95,7 @@ export default function App() {
   return (
     <div className={productStyles.cards}>
       {loading ? Array.from({ length: 6 }).map((_, i) => (
-            <div key={i} className={productStyles.productcard}>
+            <div key={i} className={productStyles.productCard}>
               <div className={`${skeletonStyles.skeleton} ${skeletonStyles.image}`}></div>
               <div className={`${skeletonStyles.skeleton} ${skeletonStyles.title}`}></div>
               <div className={`${skeletonStyles.skeleton} ${skeletonStyles.text}`}></div>
